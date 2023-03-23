@@ -1,0 +1,4 @@
+FROM golang:1.17
+COPY localhost.go .
+RUN go build -o /server
+CMD [ "/server" ]
